@@ -39,7 +39,7 @@ function InputPassword({ className, type, ...props }: React.ComponentProps<"inpu
           )}
           {...props}
         />
-        <Button onClick={() => setShowPassword(!showPassword)}>
+        <Button type="button" onClick={() => setShowPassword(!showPassword)}>
           {showPassword ? (<EyeClosed/>) : (<Eye/>)}
         </Button>
     </div>
